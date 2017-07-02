@@ -1,0 +1,311 @@
+# Site settings
+baseurl = "https://kazanspe.info/"
+languageCode = "en-us"
+title = "Kazan SPE Chapter"
+theme = "hugo-agency-theme"
+
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = ""
+
+[params]
+  # You can use Markdown syntax for urls [text](//url.to/source) or
+  # most longer texts.
+  #
+  # All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+  # for more icons. The icons are represented by their corresponding
+  # CSS class.
+
+  # To provide some metadata for search engines feel free to add a few
+  # information about you and your website.
+  name = "SPE Kazan"
+  description = "Kazan SPE Chapter"
+
+  # Link custom assets relative to /static
+  custom_css = []
+  custom_js  = []
+  favicon    = "logo1.svg"
+
+  # Possibility to disable external/additional fonts
+  # Exception: Fontawesome
+  disableFonts = false
+
+  # 404 error customization
+  [params.error404]
+    heading = "Page couldn't be found"
+    text = "Please visit [this page](/)"
+
+  # Optional piwik tracking
+  #[params.analytics.piwik]
+  #  URL = "https://stats.example.com"
+  #  ID = "42"
+  #  # Track all subdomains with "*.example.com"
+  #  domain = "www.example.com"
+  #  # Optional integrity check hash
+  #  hash = "sha512-RfeD0pacGTqy9m7U6PgehQfS4cc7SIt+e+P+H5e848kEvB/RW84CUGO3O4O3LNbxjevym6KPUZ8muPsMrI8WIw=="
+
+  # Navigation
+  [params.navigation]
+    brand = "SPE КНИТУ"
+    # Optional logo as brand stored in img/
+   #logo = "logo1.svg"
+    services = "Mission"
+    portfolio = "Portfolio"
+    about = "Events"
+    team = "Team"
+    contact = "Contact"
+
+    # Add custom links. Those can be pre- and postpended to the default menu above.
+    # Use the weight attribute to order your custom links. Uncomment the example
+    # below and replace the values with your own.
+
+    # prepended links
+    #[[menu.prepend]]
+    #  url = "http://gohugo.io"
+    #  name = "Hugo"
+    #  weight = 10
+
+    # postpended links
+    [[menu.postpend]]
+      url = "http://www.fnnh.ru"
+      name = "ФННХ"
+      weight = 10
+
+
+  # Hero section
+  [params.hero]
+    # To change the background image of the hero, replace 'header-bg.jpg' in
+    # the 'static/img' folder.
+    title = "Welcome To SPE Student Chapter!"
+    subtitle = "Kazan National Research Technological University"
+    buttonText = "More"
+
+
+  # Services section
+  [params.services]
+    enable = true
+    title = "About SPE"
+    subtitle = ""
+
+    [[params.services.row]]
+
+    [[params.services.row.list]]
+      icon = "fa-suitcase"
+      title = "Mission"
+      description = "To collect, disseminate, and exchange technical knowledge concerning the exploration, development and production of oil and gas resources, and related technologies for the public benefit; and to provide opportunities for professionals to enhance their technical and professional competence."
+      url = "http://spe.org"
+
+    [[params.services.row.list]]
+      icon = "fa-globe"
+      title = "Vision"
+      description = "Enable the global oil and gas E&P industry to share technical knowledge needed to meet the world’s energy needs in a safe and environmentally responsible manner."
+      url = "http://rca.spe.org"
+
+    [[params.services.row.list]]
+      icon = "fa-university"
+      title = "Career"
+      description = "To empower students at every stage of their academic life by building core technical capabilities and developing soft skills to ensure they turn out the best amongst peers."
+      url = "http://vk.com/kazanspe"
+
+  # Portfolio section
+  [params.portfolio]
+    enable = true
+    # All projects defined in their own files. You can find example projects
+    # at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
+    # at the root of this Hugo site.
+    # For more informtion take a look at the README.
+    title = "Portfolio"
+    subtitle = "Past Events and Programs"
+
+    [params.portfolio.modal]
+      client = "Client"
+      date = "Date"
+      category = "Category"
+      buttonText = "Close project"
+
+
+    # About section
+  [params.about]
+    enable = true
+    title = "EVENTS"
+    subtitle = "A List of upcoming programs. Do contact us with your events!"
+    endpoint = "Be part<br>of our<br>story!"
+
+    # The events will be listed from the top to the bottom.
+    # All images are stored under 'static/img/about'.
+    # Replace them with your own.
+    [[params.about.events]]
+      img = "horizon1.png"
+      date = "11-17th September 2017"
+      title = "Moscow"
+      description = "International Oil and Gas Majoring Student Forum New Generation-Across the Universe"
+
+    [[params.about.events]]
+      img = "spg.png"
+      date = "October 2017"
+      title = "St. Petersburg"
+      description = "International Gas Forum Youth Day."
+
+    [[params.about.events]]
+      img = "rtce2.png"
+      date = "16-18th October 2017"
+      title = "RTCE Moscow"
+      description = "SPE Russian Petroleum Technology Conference"
+
+    [[params.about.events]]
+      img = "hori.jpg"
+      date = "28-30th November 2017"
+      title = "Moscow"
+      description = "Oil and Gas Horizon 9"
+
+  # Team section
+  [params.team]
+    enable = true
+    # Possibility to center items
+    #center = true
+    title = "SPE DIRECTORATE"
+    subtitle = "At your service"
+    description = ""
+
+    # All team member's pictures are stored under 'static/img/team'.
+    # Replace them with your own too.
+    # Suggestion: Image size should be at least 360px*360px or the alignment might be affected.
+    [[params.team.members]]
+      img = "1.jpg"
+      name = "Abayomi Koyejo"
+      position = "President"
+      social = [
+        ["fa-twitter", "http://twitter.com/kabayomi007"],
+        ["fa-vk", "http://vk.com/kabayomi"],
+        ["fa-rocket","http://kabayomi.info"],
+        ["fa-linkedin", "http://www.linkedin.com/in/koyejoabayomi/"]
+      ]
+
+    [[params.team.members]]
+      img = "2.jpg"
+      name = "Anastasia Sitalo"
+      position = "Public Relations Officer"
+      social = [
+        ["fa-twitter", "https://vk.com/nastya_sitalo"],
+        ["fa-vk", "https://vk.com/nastya_sitalo"],
+        ["fa-instagram", "https://www.instagram.com/ann_sitalo/"]
+      ]
+
+    [[params.team.members]]
+      img = "3.jpg"
+      name = "Ademuwagun Temiloluwa"
+      position = "VP"
+      social = [
+        ["fa-facebook", "https://fb.com/dosti4luv"],
+        ["fa-vk", "https://vk.com/dosti4luv"],
+        ["fa-instagram", "https://instagram.com/dosti4luv"]
+      ]
+
+  # Client section
+    [params.clients_list]
+      enable = true
+      # Possibility to center items
+      #center = true
+      # Optional client title specifying the involvement
+      #title = "Used and trusted by"
+
+      # All the clients' logos are stored under 'static/img/logos'.
+      # Replace them with your clients's logos.
+      # Suggestion: .svg in the size of 280px*80px looks good
+      [[params.clients]]
+        logo = "mlogo-spe.jpg"
+        link = "http://vk.com/kazanspe"
+
+      [[params.clients]]
+        logo = "knitu.jpg"
+        link = "http://www.kstu.ru"
+
+      [[params.clients]]
+        logo = "fnnk.jpg"
+        link = "http://www.fnnh.ru"
+
+        [[params.clients]]
+        logo = "oil.png"
+        link = "https://vk.com/event130142865"
+
+
+  # Contact section
+  [params.contact]
+    enable = true
+    title = "Contact us"
+    subtitle  = ""
+    buttonText = "Send message"
+
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+
+    # It is possible to substitute formspring with other providers
+    # as an example the mailout plugin from caddy.
+    # Provide the post URL for the form and depending on the provider
+    # add some custom JS script to finish the implementation.
+    # postURL = "https://example.com/mailout/"
+
+    email = "kabayomi007@gmail.com"
+
+    # Success and error message overwrite for async contact form
+    #thanks = "Thank you for awesomely contacting us."
+    #error = "Message could not be send. Please contact us at mail@example.com instead."
+
+    # 'warning' defines error messages for invalid inputs
+    [params.contact.form.name]
+      text = "Your Name *"
+      warning = "Please enter your name."
+
+    [params.contact.form.email]
+      text = "Your Email *"
+      warning = "Please enter your email address."
+
+    [params.contact.form.phone]
+      text = "Your Phone *"
+      warning = "Please enter your phone number."
+
+    [params.contact.form.message]
+      text = "Your Message *"
+      warning = "Please enter a message."
+
+      # Add optional form fields to identify contact forms
+      #[[params.contact.form.hidden]]
+      #  name = "someID"
+      #  value = "example.com"
+      #
+      #[[params.contact.form.hidden]]
+      # Special values for name such as "page" and "site" will be autofilled
+      #  name = "page"
+
+  # Footer section
+  [params.footer]
+    enable = true
+    copyright = "Published under the Apache License 2.0."
+
+    [[params.footer.social]]
+      icon = "fa-vk"
+      link = "http://vk.com/kazanspe"
+
+    [[params.footer.social]]
+      icon = "fa-facebook"
+      link = "https://www.facebook.com/speknrtu/"
+
+    [[params.footer.social]]
+      icon = "fa-instagram"
+      link = "https://www.instagram.com/fnnh.kazan/"
+
+    [[params.footer.quicklinks]]
+      text = "Privacy Policy"
+      link = "#"
+
+    [[params.footer.quicklinks]]
+      text = "Terms of Use"
+      link = "#"
