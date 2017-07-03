@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "https://kazanspe.info/"
+baseurl = "https://kazanspe.github.io/"
 languageCode = "en-us"
 title = "Kazan SPE Chapter"
 theme = "hugo-agency-theme"
